@@ -1,0 +1,29 @@
+application: phptest1
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /hello
+  script: hello.php
+
+- url: /index.php.*
+  script: mediawiki-1.21.0/index.php
+
+- url: /mw-config/index.php
+  script: mediawiki-1.21.0/mw-config/index.php
+
+- url: /skins
+  static_dir: mediawiki-1.21.0/skins
+  application_readable: true
+
+- url: /wiki/skins
+  static_dir: mediawiki-1.21.0/skins
+  application_readable: true
+
+- url: /load.php
+  script: mediawiki-1.21.0/load.php
+
+- url: /resources
+  static_dir: mediawiki-1.21.0/resources
+  application_readable: true
