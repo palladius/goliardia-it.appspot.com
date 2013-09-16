@@ -1,9 +1,15 @@
 application: google.com:phptest1
-version: 1
+version: 2
 runtime: php
 api_version: 1
 
 handlers:
+- url: /redirect
+  script: redirect.php
+
+- url: /
+  script: hello.php
+
 - url: /hello
   script: hello.php
 
