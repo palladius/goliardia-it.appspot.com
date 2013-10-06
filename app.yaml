@@ -1,11 +1,20 @@
-application: google.com:phptest1
-version: 2
+# Used to be: google.com:phptest1
+# http://goliardia-it.appspot.com/
+application: goliardia-it
+version: 3
+
 runtime: php
 api_version: 1
 
 handlers:
+- url: /.*
+  script: hello.php
+
 - url: /redirect
   script: redirect.php
+
+- url: /req
+  script: request_headers.php
 
 - url: /
   script: hello.php
