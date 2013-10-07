@@ -17,7 +17,7 @@ $name = explode("@",$name)[0];
 //$name = $name[0]." ".$name[1];
 
 $appname = "goliardia-it (php test)";
-$version = "1.10a (TODO read from VERSION)";
+$version = "1.11"; // (TODO read from VERSION)
 
 // start with sessions.
 $_SESSION['name']=$name;
@@ -36,6 +36,7 @@ $_SESSION['user2'] = 'foo';
   <a href='/hello2'>hello2</a> |
   <a href='/login.php'>login.php</a> |
   <a href='/redirect'>redirect</a> |
+  <a href='/req'>req</a> |
   <a href='/user'>user</a> |
   <a href='/VERSION'>VERSION</a> |
 
