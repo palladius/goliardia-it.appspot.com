@@ -3,7 +3,8 @@
 // from http://stackoverflow.com/questions/17620667/how-to-construct-a-app-yaml-file
 
 session_start();
-date_default_timezone_set('America/Los_Angeles');
+//date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Europe/Zurich');
 
 require_once 'google/appengine/api/users/UserService.php';
 

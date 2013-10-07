@@ -9,3 +9,4 @@ versions:
   106d: added static support. Mediawiki install works!
   107: added catchall, fixed routes
   108: better sessions.
+  109: fixed bug which broke the code :/. Also fixed routes and stuff.

@@ -8,3 +8,5 @@
 e ciao da me fuori parentesi..
 
 version = v$version -- <? echo $version ; ?>.
+
+<? include '_footer.php'; ?>

@@ -1,4 +1,5 @@
 <?php
 session_start();
-echo $_SESSION['name'];
+echo "Name: "  + $_SESSION['name'];
+echo "Email: " + $_SESSION['email'];
 

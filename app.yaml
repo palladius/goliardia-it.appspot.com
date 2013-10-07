@@ -1,7 +1,7 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 108
+version: 109
 
 runtime: php
 api_version: 1
@@ -71,9 +71,9 @@ handlers:
 # - url: /ferris/img
 #   static_dir: ferris/static/img
 
-# - url: /favicon\.ico
-#   static_files: app/static/favicon.ico
-#   upload: app/static/favicon\.ico
+- url: /favicon\.ico
+  static_files: static/favicon.ico
+  upload: static/favicon\.ico
 
 # - url: /robots\.txt
 #   static_files: app/static/robots.txt
