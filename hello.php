@@ -5,8 +5,8 @@
   echo '<h1>Hello1, World PHP!</h1>';
 ?>
 
-e ciao da me fuori parentesi..
+e ciao da me fuori parentesi..<br/>
 
-version = v$version -- <? echo $version ; ?>.
+version: v<? echo $version ; ?>.
 
 <? include '_footer.php'; ?>

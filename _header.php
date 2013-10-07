@@ -1,12 +1,8 @@
 <?php
     // _header.php
-    session_start();
-    $_SESSION['user2'] = 'foo';
+session_start();
 
-    $appname = "goliardia-it (php test)";
-    $version = "1.10a (TODO read from VERSION)";
-
-    date_default_timezone_set('Europe/Zurich');
+date_default_timezone_set('Europe/Zurich');
 
 require_once 'google/appengine/api/users/UserService.php';
 
@@ -15,20 +11,26 @@ use google\appengine\api\users\UserService;
 
 $user = UserService::getCurrentUser();
 $name= $user->getNickname();
-$name = explode(".",$name);
-$name[0]= ucfirst($name[0]);
-$name[1]= ucfirst($name[1]);
-$name = $name[0]." ".$name[1];
+$name = explode("@",$name)[0];
+//$name[0]= ucfirst($name[0]);
+//$name[1]= ucfirst($name[1]);
+//$name = $name[0]." ".$name[1];
+
+$appname = "goliardia-it (php test)";
+$version = "1.10a (TODO read from VERSION)";
+
+// start with sessions.
 $_SESSION['name']=$name;
 $_SESSION['user']=$name;
 $_SESSION['email']= getenv('USER_EMAIL');
+$_SESSION['user2'] = 'foo';
 
 ?>
 
-<div class='header'>
-Welcome to PHP Test v<b><? echo $version ?></b>
+<div class='header'><center>
 [
 
+  <a href='/'>/</a> |
   <a href='/index.php'>index.php (mw)</a> |
   <a href='/hello'>hello</a> |
   <a href='/hello2'>hello2</a> |
@@ -47,4 +49,7 @@ You are <b class='user'>'
   print $_SESSION['user'];
 ?>'</b>
 
+<br/>
+
+</center>
 </div>

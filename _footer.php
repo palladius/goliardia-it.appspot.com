@@ -1,6 +1,6 @@
 
 <hr/>
 <center>
-   <tt><? echo "$appname v$version" ?></tt>
-    by Riccardo Carlesso, &tm;
+   <tt><? echo "$appname v<b>$version</b>" ?></tt>
+    by Riccardo Carlesso, &trademark;
 </center>
