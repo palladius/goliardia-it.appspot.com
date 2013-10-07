@@ -4,7 +4,7 @@
     $_SESSION['user2'] = 'foo';
 
     $appname = "goliardia-it (php test)";
-    $version = "1.9a (TODO read from VERSION)";
+    $version = "1.10a (TODO read from VERSION)";
 
     date_default_timezone_set('Europe/Zurich');
 
