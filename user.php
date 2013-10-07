@@ -4,6 +4,7 @@
 
 session_start();
 date_default_timezone_set('America/Los_Angeles');
+
 require_once 'google/appengine/api/users/UserService.php';
 
 use google\appengine\api\users\User;
@@ -18,5 +19,5 @@ $name = $name[0]." ".$name[1];
 $_SESSION['name']=$name;
 $_SESSION['email']= getenv('USER_EMAIL');
 
-// header('Location: login.php');
+header('Location: login.php');
 

@@ -7,3 +7,5 @@ versions:
   6: +VERSION, images.
   1-6b: better app.yml with mediawiki routes on better places.
   106d: added static support. Mediawiki install works!
+  107: added catchall, fixed routes
+  108: better sessions.

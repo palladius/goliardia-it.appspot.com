@@ -4,7 +4,7 @@
     $_SESSION['user'] = 'foo';
 
     $appname = "goliardia-it (php test)"
-    $version = "1.5b";
+    $version = "1.7";
 ?>
 
 <div class='header'>
@@ -26,7 +26,7 @@ Welcome to PHP Test v<b><? echo $version ?></b>
 
 You are <b class='user'>'
 <?php
-  print $_SESSION['Foo'];
+  print $_SESSION['user'];
 ?>'</b>
 
 </div>

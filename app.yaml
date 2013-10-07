@@ -1,7 +1,7 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 106
+version: 108
 
 runtime: php
 api_version: 1
@@ -50,8 +50,6 @@ handlers:
   static_dir: mediawiki-1.21.0/resources
   application_readable: true
 
-- url: /.*
-  script: hello.php
 
 - url: /user
   script: user.php
@@ -80,3 +78,9 @@ handlers:
 # - url: /robots\.txt
 #   static_files: app/static/robots.txt
 #   upload: app/static/robots\.txt
+
+
+
+## per ultimo
+- url: /.*
+  script: catchall.php
