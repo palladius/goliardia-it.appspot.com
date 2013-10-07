@@ -3,7 +3,7 @@
     session_start();
     $_SESSION['user'] = 'foo';
 
-    $appname = "goliardia-it (php test)"
+    $appname = "goliardia-it (php test)";
     $version = "1.7";
 ?>
 
