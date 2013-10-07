@@ -1,7 +1,7 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 3
+version: 4
 
 runtime: php
 api_version: 1
@@ -17,10 +17,13 @@ handlers:
   script: request_headers.php
 
 - url: /
-  script: hello.php
+  script: index.php
 
 - url: /hello
   script: hello.php
+
+- url: /hello2
+  script: hello2.php
 
 - url: /index.php.*
   script: mediawiki-1.21.0/index.php

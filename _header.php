@@ -10,14 +10,14 @@ Welcome to PHP Test
 
   <a href='/index.php'>index.php</a> |
   <a href='/hello'>hello</a> |
+  <a href='/hello2'>hello2</a> |
   <a href='/redirect'>redirect</a> |
 
 ]
 
-You are <b class='user'>
+You are <b class='user'>'
 <?php
   print $_SESSION['Foo'];
-?>
-</b>
+?>'</b>
 
 </div>
