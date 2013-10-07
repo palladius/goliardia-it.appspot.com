@@ -1,14 +1,12 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 4
+version: 1-6c
 
 runtime: php
 api_version: 1
 
 handlers:
-- url: /.*
-  script: hello.php
 
 - url: /redirect
   script: redirect.php
@@ -19,11 +17,17 @@ handlers:
 - url: /
   script: index.php
 
+- url: /VERSION
+  script: VERSION
+
 - url: /hello
   script: hello.php
 
 - url: /hello2
   script: hello2.php
+
+- url: /login.php
+  script: login.php
 
 - url: /index.php.*
   script: mediawiki-1.21.0/index.php
@@ -45,3 +49,11 @@ handlers:
 - url: /resources
   static_dir: mediawiki-1.21.0/resources
   application_readable: true
+
+- url: /.*
+  script: hello.php
+
+- url: /user
+  script: user.php
+  login: required
+  auth_fail_action: redirect

@@ -1,0 +1,8 @@
+versions:
+  1: boh
+  2: mah
+  3: boh
+  4: added footer and auth
+  5: added user, login, HISTORY. 
+  6: +VERSION, images.
+  1-6b: better app.yml with mediawiki routes on better places.
