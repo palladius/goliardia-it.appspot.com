@@ -18,6 +18,9 @@ Welcome to PHP Test v<b><? echo $version ?></b>
   <a href='/user'>user</a> |
   <a href='/VERSION'>VERSION</a> |
 
+  <a href='/mw-config/index.php'>Configure Mediawiki</a> |
+  
+
 ]
 
 You are <b class='user'>'
