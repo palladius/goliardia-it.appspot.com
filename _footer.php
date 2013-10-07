@@ -1,4 +1,6 @@
 
 <hr/>
-<center>by Riccardo Carlesso, &tm;
+<center>
+   <tt><? echo "$appname v$version" ?></tt>
+    by Riccardo Carlesso, &tm;
 </center>

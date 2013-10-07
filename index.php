@@ -8,3 +8,6 @@
 Hello everybody from index (GAE + PHP).
 
 <img src='static/hello-world.jpg' />
+
+<?   include '_footer.php'; ?>
+
