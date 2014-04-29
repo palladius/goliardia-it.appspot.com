@@ -12,3 +12,4 @@ versions:
   109: fixed bug which broke the code :/. Also fixed routes and stuff.
   110: fixed redirect. Fixed user/header.
   111: added req/ and better README.
+  112: added cron and php.ini

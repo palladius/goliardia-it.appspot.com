@@ -26,7 +26,7 @@ Then follow this:
 My data
 =======
 
-    AppName: `s~goliardia-it`
+    AppName:  `s~goliardia-it`
     CloudSQL: `google.com:biglamp:phptest1-mediawiki`
 
 
@@ -34,4 +34,4 @@ Thanks
 ======
 
 - My mum
-- proppy@
+- proppy

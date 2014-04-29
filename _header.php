@@ -1,29 +1,16 @@
 <?php
     // _header.php
 session_start();
-
 date_default_timezone_set('Europe/Zurich');
 
-require_once 'google/appengine/api/users/UserService.php';
-
-use google\appengine\api\users\User;
-use google\appengine\api\users\UserService;
-
-$user = UserService::getCurrentUser();
-$name= $user->getNickname();
-$name = explode("@",$name)[0];
-//$name[0]= ucfirst($name[0]);
-//$name[1]= ucfirst($name[1]);
-//$name = $name[0]." ".$name[1];
-
 $appname = "goliardia-it (php test)";
-$version = "1.11"; // (TODO read from VERSION)
+$version = "1.12"; // (TODO read from VERSION)
 
+$username = $name or "_anonymous_" ;
 // start with sessions.
-$_SESSION['name']=$name;
-$_SESSION['user']=$name;
+#$_SESSION['name']=$name;
+$_SESSION['user'] = $username ; 
 $_SESSION['email']= getenv('USER_EMAIL');
-$_SESSION['user2'] = 'foo';
 
 ?>
 

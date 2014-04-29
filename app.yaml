@@ -1,7 +1,7 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 111
+version: 112
 
 runtime: php
 api_version: 1
