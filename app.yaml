@@ -1,7 +1,8 @@
 # Used to be: google.com:phptest1
 # http://goliardia-it.appspot.com/
 application: goliardia-it
-version: 112
+# would be nice to take it from 'VERSION', like `cat VERSION`
+version: 113
 
 runtime: php
 api_version: 1
